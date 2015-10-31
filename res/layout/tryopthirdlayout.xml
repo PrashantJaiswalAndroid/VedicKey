@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="Enter two numbers close and less than 100 (i.e. between 90 to 100)."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/txtcolor" />
+
+            <TextView
+                android:id="@+id/enterhere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:text="Enter Here: "
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_toRightOf="@+id/enterhere"
+                android:background="@drawable/editborder"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dimen_2"
+                android:textColor="@color/black" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/xtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_toRightOf="@+id/editText1"
+                android:text="X"
+                android:textColor="@color/txtcolor"
+                android:textSize="@dimen/dimen_20" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xtext"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/xtext"
+                android:background="@drawable/editborder"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dimen_2"
+                android:textColor="@color/black" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_below="@+id/xtext"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@drawable/buttoncorner"
+                android:text="Ok" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xtext"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@drawable/buttoncorner"
+                android:text="Clear" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button2"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="Step2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/txtcolor" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:text="Step1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/txtcolor" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView3" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <include
+                        android:id="@+id/tryone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/tryoptionthirdstepone"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/trytwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/tryoptionthirdsteptwo"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

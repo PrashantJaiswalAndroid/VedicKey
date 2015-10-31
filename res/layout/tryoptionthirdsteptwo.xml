@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtvertically"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="Find crosswise subtraction and vertically multiplication, And write both the results together."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtvertically"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtvertically"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/crossimage"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_below="@+id/number2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cross" />
+
+    <TextView
+        android:id="@+id/number3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/crossimage"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/number4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/crossimage"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtcrooswise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number4"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Crosswise Subtraction -"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <EditText
+        android:id="@+id/number5"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtcrooswise"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/editborder"
+        android:text=""
+         android:inputType="number"
+        android:padding="@dimen/dimen_2"
+        android:textColor="@color/black" />
+     
+   
+
+    <TextView
+        android:id="@+id/txtvertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number5"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="Vertically Multiplication –"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <EditText
+        android:id="@+id/number9"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtvertical"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/editborder"
+        android:text=""
+         android:inputType="number"
+        android:padding="@dimen/dimen_2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+     <Button
+        android:id="@+id/btn2t"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/txtvertical"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_toRightOf="@+id/number9"
+        android:background="@drawable/buttoncorner"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="check"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+
+    <TextView
+        android:id="@+id/finaltxts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number9"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="sdsdsd"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <EditText
+        android:id="@+id/number10"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number9"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_toRightOf="@+id/finaltxts"
+        android:background="@drawable/editborder"
+        android:text=""
+         android:inputType="number"
+        android:padding="@dimen/dimen_2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+     <Button
+        android:id="@+id/btn3t"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/number9"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_toRightOf="@+id/number10"
+        android:background="@drawable/buttoncorner"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="check"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+    
+
+</RelativeLayout>

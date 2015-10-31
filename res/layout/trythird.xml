@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+ 
+
+    <TextView
+        android:id="@+id/multitutorialtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerlyt"
+        android:layout_centerHorizontal="true"
+        android:text="Multiplication Tutorial"
+        android:textColor="@color/txtcolor"
+        android:textSize="@dimen/dimen_20" />
+
+    <TextView
+        android:id="@+id/optiontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/multitutorialtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text="Multiplying numbers close and less than 100 ( i.e. between 90 to 100 )"
+        android:textColor="@color/txtcolor"
+        android:textSize="@dimen/dimen_18" />
+
+    <TextView
+        android:id="@+id/exampletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/optiontxt"
+        android:layout_below="@+id/optiontxt"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text="For Example: 105 x 108"
+        android:textColor="@color/txtcolor"
+        android:textSize="@dimen/dimen_18" />
+
+    <TextView
+        android:id="@+id/stepstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exampletxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text="Steps 1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_18" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exampletxt"
+        android:layout_below="@+id/stepstxt" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/descriptontxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_5"
+                android:text="Compare both the number with 100. If the number is greater than 100,write the difference with a + sgin.And if the nimber is less than 100,write the difference with a - sign."
+                android:textColor="@color/txtcolor"
+                android:textSize="@dimen/dimen_18" />
+
+            <TextView
+                android:id="@+id/steptxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptontxt"
+                android:layout_below="@+id/descriptontxt"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_5"
+                android:text="Here 105 is 5 greater than 100, so write the difference as    +5    105     +5"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_18" />
+
+            <TextView
+                android:id="@+id/steptxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/steptxt1"
+                android:layout_below="@+id/steptxt1"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_5"
+                android:text="And 108 is 8 greater than 100, so write the difference as    +8    108     +8"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_18" />
+
+            <Button
+                android:id="@+id/step1nextstepbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/steptxt2"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:background="@drawable/buttoncorner"
+                android:text="Next Step"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_18" />
+
+            <Button
+                android:id="@+id/step1anotherexamplebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/steptxt2"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:background="@drawable/buttoncorner"
+                android:text="Another Example"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_18" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

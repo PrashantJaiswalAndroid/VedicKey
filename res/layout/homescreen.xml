@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/introlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background8" >
+
+    <ImageView
+        android:id="@+id/guru"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_1"
+        android:src="@drawable/pdticon" />
+    
+     <TextView
+        android:id="@+id/vedkeytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18"
+        android:layout_marginBottom="@dimen/dimen_18"
+        android:layout_toRightOf="@+id/guru"
+        android:text="@string/Vedic_Key"
+        android:textColor="@color/txtcolor"
+        android:textSize="@dimen/dimen_40" />
+
+    <ImageView
+        android:id="@+id/fun"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:src="@drawable/schlogo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fun"
+        android:layout_below="@+id/guru"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Birth Of Vedic Mathematics"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_20"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="Vedic Mathematics is the name given to the ancient system of Indian Mathematics which was rediscovered from the Vedas between 1911 and 1918 by Shri Bharati Krishna Tirthaji of Govardhan Peeth, Puri Jaganath (1884-1960). His work on Vedic Mathematics is really a precious gift to the world of mathematics and to mankind."
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_18" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="About Vedic Mathematics"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_20"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="The Vedic system simplifies every aspect of mathematics like multiplication, division, complex numbers, cube roots etc. Even recurring decimals and auxiliary fractions can be handled at ease. When this system is applied to mathematics, it’s popularly known as Vedic Mathematics."
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_18" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="The Vedic System"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_20"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="The Vedic System outshines the rest with its simplicity. This system is known to enhance the intelligence quotient (I.Q.) by improving one’s logical assessment; skill in approaching problems and arriving at creative solutions quickly. It adds clarity by inducing creative thinking, hence generating tremendous amount of interest in mathematics. This new angle of thought helps even the slow learners to build a strong foundation of mathematics. "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_18" />
+        </RelativeLayout>
+    </ScrollView>
+
+   
+    
+    <TextView 
+        android:id="@+id/taphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_18"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:text="Tap here to continue"/>
+
+</RelativeLayout>

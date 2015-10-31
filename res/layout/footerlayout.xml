@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+  
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttoncorner"
+        android:text="Try it yourself" />
+    
+      <Button
+        android:id="@+id/button1"
+         android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_toLeftOf="@+id/button2"
+        android:background="@drawable/buttoncorner"
+        android:text="Previous Tutorial" />
+
+    <Button
+        android:id="@+id/button3"
+           android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dimen_10"
+         android:layout_toRightOf="@+id/button2"
+        android:background="@drawable/buttoncorner"
+        android:text="Next Tutorial" />
+
+</RelativeLayout>

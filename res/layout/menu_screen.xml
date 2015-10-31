@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.rideversity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hader_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_160"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background5" >
+
+        <ImageView
+            android:id="@+id/profile_pic_Img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pdticon" />
+
+        <TextView
+            android:id="@+id/user_name_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Vedic_Key"
+          
+            android:textSize="@dimen/dimen_30" 
+            android:textColor="@color/txtcolor"/>
+
+        <ImageView
+            android:id="@+id/edit_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/schlogo"
+            android:padding="10dp"
+            android:visibility="gone" />
+        
+        
+          <TextView
+            android:id="@+id/funraga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/profile_pic_Img"
+            android:text="Fun Raga Pvt. Ltd."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_20" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/multilist"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/hader_layout"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@android:color/transparent"
+        android:divider="@color/txtcolor"
+        android:dividerHeight="@dimen/dimen_1"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

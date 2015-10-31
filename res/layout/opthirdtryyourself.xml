@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:padding="@dimen/dimen_5"
+        android:text="Enter a number close to 100 (i.e. between 90-110)."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/xtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="X"
+        android:textColor="@color/txtcolor"
+        android:textSize="@dimen/dimen_25" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView01"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_toLeftOf="@+id/xtxt"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/dimen_5"
+        android:text=""
+      
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView01"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_toRightOf="@+id/xtxt"
+        android:background="@android:color/white"
+        android:text=""
+        
+        android:textColor="@color/black" />
+
+   
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="@dimen/dimen_40"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:background="@drawable/buttoncorner"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:text="OK"
+        android:layout_below="@+id/edt2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+    
+    
+     <Button
+        android:id="@+id/btn8"
+        android:layout_width="@dimen/dimen_40"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_10"
+         android:layout_marginTop="@dimen/dimen_5"
+        android:background="@drawable/buttoncorner"
+        android:text="Clear"
+        android:layout_below="@+id/edt2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+
+    <TextView
+        android:id="@+id/stepstr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn8"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/stepstr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+    <TextView
+        android:id="@+id/stepstr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn8"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Step3"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+
+   
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        android:layout_below="@+id/steps1"
+        android:layout_marginTop="@dimen/dimen_10" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/layoutsteps1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/tryoptionthirdstepone"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layoutsteps2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/tryoptionthirdsteptwo"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layoutsteps3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/tryoptionthirdstepthird"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+  
+
+</RelativeLayout>

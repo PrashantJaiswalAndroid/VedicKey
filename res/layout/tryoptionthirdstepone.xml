@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen_10"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tuopstep1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:text="Compare both the numbers with 100 and find the difference."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/txtcolor" />
+    
+      <TextView
+        android:id="@+id/diff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:text="sdsdsdd"
+         android:layout_marginTop="@dimen/dimen_20"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edttxt2"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/txt1"
+        android:layout_toRightOf="@+id/diff1"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/editborder"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    
+    
+    
+  <TextView
+        android:id="@+id/diff2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edttxt2"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:text="sdsdsdd"
+         android:layout_marginTop="@dimen/dimen_25"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+    
+
+    <EditText
+        android:id="@+id/edttxt4"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttxt2"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/diff2"
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:background="@drawable/editborder"
+        android:paddingLeft="@dimen/dimen_2"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="@dimen/dimen_45"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@+id/edttxt4"
+        android:layout_marginLeft="@dimen/dimen_10"
+       android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/buttoncorner"
+        android:text="check"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_10" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="dimen_50">100dp</dimen>
+    <dimen name="dimen_1">2dp</dimen>
+    <dimen name="dimen_2">4dp</dimen>
+    <dimen name="dimen_3">6dp</dimen>
+    <dimen name="dimen_4">8dp</dimen>
+    <dimen name="dimen_5">10dp</dimen>
+    <dimen name="dimen_6">12dp</dimen>
+    <dimen name="dimen_7">14dp</dimen>
+    <dimen name="dimen_8">16dp</dimen>
+    <dimen name="dimen_9">18dp</dimen>
+    <dimen name="dimen_10">20dp</dimen>
+    <dimen name="dimen_11">22dp</dimen>
+    <dimen name="dimen_12">24dp</dimen>
+    <dimen name="dimen_13">26dp</dimen>
+    <dimen name="dimen_14">28dp</dimen>
+    <dimen name="dimen_15">30dp</dimen>
+    <dimen name="dimen_18">32dp</dimen>
+    <dimen name="dimen_20">40dp</dimen>
+    <dimen name="dimen_25">50dp</dimen>
+    <dimen name="dimen_35">70dp</dimen>
+    <dimen name="dimen_30">60dp</dimen>
+    <dimen name="dimen_40">80dp</dimen>
+    <dimen name="dimen_45">90dp</dimen>
+    <dimen name="dimen_54">108dp</dimen>
+    <dimen name="dimen_55">110dp</dimen>
+    <dimen name="dimen_60">120dp</dimen>
+    <dimen name="dimen_70">140dp</dimen>
+    <dimen name="dimen_80">160dp</dimen>
+    <dimen name="dimen_90">180dp</dimen>
+    <dimen name="dimen_100">200dp</dimen>
+    <dimen name="dimen_110">220dp</dimen>
+    <dimen name="dimen_120">240dp</dimen>
+    <dimen name="dimen_160">320dp</dimen>
+    <dimen name="mulCompChildHeight">300dp</dimen>
+    <dimen name="dimen_320">640dp</dimen>
+    <dimen name="dimen__10">-20dp</dimen>
+    <dimen name="dimen__15">-30dp</dimen>
+    <dimen name="dimen__25">-50dp</dimen>
+    <dimen name="dimen__30">-60dp</dimen>
+    <dimen name="dimen_200">400dp</dimen>
+    <dimen name="dimen_240">480dp</dimen>
+    <dimen name="dimen_260">520dp</dimen>
+    <dimen name="iconSize">180dp</dimen>
+    <dimen name="marginsplashscreen">60dp</dimen>
+    <dimen name="donthaveacc_margin_bottom">60dp</dimen>
+    <dimen name="dashboardHeaderPaddingTop">40dp</dimen>
+    <dimen name="dashboardfooterPadding">20dp</dimen>
+    <dimen name="listviewheight">200dp</dimen>
+    <dimen name="divider_height">100dp</dimen>
+    <dimen name="dimens_top">20dp</dimen>
+  	<dimen name="dimen_left">10dp</dimen>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <RelativeLayout 
+        android:id="@+id/musiclayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        >
+        <TextView 
+            android:id="@+id/musictxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:textColor="@color/txtcolor"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_12"/>
+        
+        <ImageView 
+            android:id="@+id/musiconoff"
+            android:padding="@dimen/dimen_2"
+            android:layout_below="@+id/musictxt"
+            android:layout_alignLeft="@+id/musictxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/switch_on"/>
+        
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/soundlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/musiclayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"
+        >
+        <TextView 
+            android:id="@+id/soundtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sound"
+            android:textColor="@color/txtcolor"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dimen_12"/>
+        
+        <ImageView 
+            android:id="@+id/soundonoff"
+            android:padding="@dimen/dimen_2"
+            android:layout_below="@+id/soundtxt"
+            android:layout_width="wrap_content"
+            android:layout_alignLeft="@+id/soundtxt"
+            android:layout_height="wrap_content"
+            android:src="@drawable/switch_on"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

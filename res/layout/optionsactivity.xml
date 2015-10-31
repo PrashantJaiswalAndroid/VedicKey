@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/background8" >
+
+  <!--   <include
+        android:id="@+id/headerlyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_1"
+        layout="@layout/headerlayout" /> -->
+        
+        
+    <ImageView
+        android:id="@+id/guru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_30"
+     
+        android:src="@drawable/pdticon" />
+
+    <TextView
+        android:id="@+id/vedkeytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_3"
+        android:text="@string/Vedic_Key"
+        android:textColor="@color/txtcolor"
+        android:textSize="@dimen/dimen_40"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vedkeytxt"
+        android:layout_marginTop="@dimen/dimen_20" >
+
+        <Button
+            android:id="@+id/tutorialbtn"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttoncorner"
+            android:text="Tutorial"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/tryityourself"
+           android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_below="@+id/tutorialbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/buttoncorner"
+            android:text="Try it yourself"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/quizbtn"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_below="@+id/tryityourself"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/buttoncorner"
+            android:text="Quiz"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/helpbtn"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_below="@+id/quizbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/buttoncorner"
+            android:text="Help"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/exitbtn"
+           android:layout_width="@dimen/dimen_160"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_below="@+id/helpbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/buttoncorner"
+            android:text="Exit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        layout="@layout/bottomlayout" />
+
+</RelativeLayout>
