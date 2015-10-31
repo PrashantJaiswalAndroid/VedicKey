@@ -44,11 +44,12 @@
     
     <ImageView 
         android:id="@+id/crossimage"
-        android:layout_width="@dimen/dimen_100"
-        android:layout_height="@dimen/dimen_100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/number2"
+        android:scaleType="fitXY"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/cross"/>
+        android:src="@drawable/crossimage"/>
     
      <TextView
         android:id="@+id/number3"

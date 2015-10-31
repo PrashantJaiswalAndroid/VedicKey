@@ -1,5 +1,7 @@
 package com.example.vedkey.fragments;
 
+import java.util.Random;
+
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
@@ -64,6 +66,7 @@ int nu=0;
 		
 		
 		
+		
 		anotherexamplebtn=(Button)rootView.findViewById(R.id.anotherexamplebtn);
 
 	
@@ -99,6 +102,11 @@ int nu=0;
 				// TODO Auto-generated method stub
 				layoutone.setVisibility(View.GONE);
 				layout2.setVisibility(View.GONE);
+				
+				Random r = new Random();
+				x = r.nextInt(100 - 90) + 90;
+				y = r.nextInt(100 - 90) + 90;
+				exampletxt.setText(x+" X "+y);
 			}
 		});
 		
@@ -163,8 +171,7 @@ int nu=0;
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 
-				step1.setClickable(false);
-				step2.setClickable(true);
+			
 				
 				
 		/*		if(x>100&&y>100)
@@ -215,9 +222,7 @@ int nu=0;
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
-				step1.setClickable(true);
-				step2.setClickable(false);
+			
 				
 				layout2number1.setText(String.valueOf(x));
 				layout2number3.setText(String.valueOf(y));

@@ -39,12 +39,11 @@
 
     <Button
         android:id="@+id/anotherexamplebtn"
-        android:layout_width="@dimen/dimen_60"
-        android:layout_height="wrap_content"
+           android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_40"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/forexampletxt"
-        android:background="@drawable/buttoncorner"
-        android:text="Another Example"
+        android:background="@drawable/another"
         android:layout_marginRight="@dimen/dimen_5"
         android:textColor="@android:color/white"
         android:textSize="@dimen/dimen_10" />

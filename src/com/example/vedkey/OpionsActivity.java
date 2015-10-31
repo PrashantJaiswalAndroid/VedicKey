@@ -2,6 +2,8 @@ package com.example.vedkey;
 
 
 
+import com.example.vedkey.Service.MusicService;
+
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
@@ -121,7 +123,8 @@ public class OpionsActivity extends Activity{
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-			
+				Intent ial = new Intent(OpionsActivity.this, MusicService.class);
+				stopService(ial);
 				OpionsActivity.this.finish();
 				
 			}

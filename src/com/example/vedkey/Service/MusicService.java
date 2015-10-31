@@ -2,6 +2,7 @@ package com.example.vedkey.Service;
 
 import com.example.vedkey.R;
 
+import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -43,6 +44,17 @@ public class MusicService extends Service{
 		}
 			super.onDestroy();
 		}
+	
+	@SuppressLint("NewApi")
+	@Override
+	public void onTaskRemoved(Intent rootIntent) {
+		// TODO Auto-generated method stub
+		super.onTaskRemoved(rootIntent);
+		
+		//Intent ial = new Intent(this, MusicService.class);
+		stopSelf();
+		
+	}
 	
 }
 

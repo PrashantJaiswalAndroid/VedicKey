@@ -88,8 +88,8 @@
         android:layout_marginLeft="@dimen/dimen_10"
        android:layout_alignParentLeft="true"
         android:layout_marginTop="@dimen/dimen_10"
-        android:background="@drawable/buttoncorner"
-        android:text="check"
+        android:background="@drawable/check"
+        android:text=""
         android:textColor="@android:color/white"
         android:textSize="@dimen/dimen_10" />
 

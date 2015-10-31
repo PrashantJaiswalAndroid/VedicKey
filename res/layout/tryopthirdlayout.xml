@@ -97,8 +97,8 @@
                 android:layout_marginLeft="@dimen/dimen_10"
                 android:layout_below="@+id/xtext"
                 android:layout_marginTop="@dimen/dimen_10"
-                android:background="@drawable/buttoncorner"
-                android:text="Ok" />
+                android:background="@drawable/ok"
+                />
 
             <Button
                 android:id="@+id/button2"
@@ -109,8 +109,8 @@
                 android:layout_marginTop="@dimen/dimen_10"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="@dimen/dimen_10"
-                android:background="@drawable/buttoncorner"
-                android:text="Clear" />
+                android:background="@drawable/clear"
+                android:text="" />
 
             <TextView
                 android:id="@+id/textView2"

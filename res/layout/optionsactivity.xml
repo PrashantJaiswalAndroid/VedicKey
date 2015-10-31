@@ -33,77 +33,81 @@
         android:textSize="@dimen/dimen_40"
         android:visibility="gone" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/vedkeytxt"
-        android:layout_marginTop="@dimen/dimen_20" >
-
-        <Button
-            android:id="@+id/tutorialbtn"
-            android:layout_width="@dimen/dimen_160"
-            android:layout_height="@dimen/dimen_35"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/buttoncorner"
-            android:text="Tutorial"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/dimen_15" />
-
-        <Button
-            android:id="@+id/tryityourself"
-           android:layout_width="@dimen/dimen_160"
-            android:layout_height="@dimen/dimen_35"
-            android:layout_below="@+id/tutorialbtn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/dimen_20"
-            android:background="@drawable/buttoncorner"
-            android:text="Try it yourself"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/dimen_15" />
-
-        <Button
-            android:id="@+id/quizbtn"
-            android:layout_width="@dimen/dimen_160"
-            android:layout_height="@dimen/dimen_35"
-            android:layout_below="@+id/tryityourself"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/dimen_20"
-            android:background="@drawable/buttoncorner"
-            android:text="Quiz"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/dimen_15" />
-
-        <Button
-            android:id="@+id/helpbtn"
-            android:layout_width="@dimen/dimen_160"
-            android:layout_height="@dimen/dimen_35"
-            android:layout_below="@+id/quizbtn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/dimen_20"
-            android:background="@drawable/buttoncorner"
-            android:text="Help"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/dimen_15" />
-
-        <Button
-            android:id="@+id/exitbtn"
-           android:layout_width="@dimen/dimen_160"
-            android:layout_height="@dimen/dimen_35"
-            android:layout_below="@+id/helpbtn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/dimen_20"
-            android:background="@drawable/buttoncorner"
-            android:text="Exit"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/dimen_15" />
-    </RelativeLayout>
 
     <include
+        android:id="@+id/bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/dimen_20"
         layout="@layout/bottomlayout" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/vedkeytxt"
+        android:layout_above="@+id/bottom"
+        android:layout_marginTop="@dimen/dimen_20">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
+        <Button
+            android:id="@+id/tutorialbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tutorial"
+           
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/tryityourself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tutorialbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/tryityourself"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/quizbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tryityourself"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/quiz"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/helpbtn"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quizbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/help"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+
+        <Button
+            android:id="@+id/exitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/helpbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/exit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15" />
+    </RelativeLayout>
+</ScrollView>
 </RelativeLayout>

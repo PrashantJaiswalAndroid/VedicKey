@@ -115,7 +115,7 @@ TextView diff1,diff2;
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if(edt1.getText().toString().equalsIgnoreCase("")||edt2.getText().toString().equalsIgnoreCase("")
-						||Integer.valueOf(edt1.getText().toString())>100||Integer.valueOf(edt2.getText().toString())>100)
+						||Integer.valueOf(edt1.getText().toString())>100||Integer.valueOf(edt2.getText().toString())>100||Integer.valueOf(edt1.getText().toString())<90||Integer.valueOf(edt2.getText().toString())<90)
 				{
 
 					stepstr1.setClickable(false);
@@ -128,7 +128,7 @@ TextView diff1,diff2;
 
 					// set dialog message
 					alertDialogBuilder
-					.setMessage("Please enter number")
+					.setMessage("Please enter correct number")
 					.setCancelable(false)
 					.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog,int id) {

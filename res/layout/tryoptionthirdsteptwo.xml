@@ -44,11 +44,12 @@
 
     <ImageView
         android:id="@+id/crossimage"
-        android:layout_width="@dimen/dimen_100"
-        android:layout_height="@dimen/dimen_100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
         android:layout_below="@+id/number2"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/cross" />
+        android:src="@drawable/crossimage" />
 
     <TextView
         android:id="@+id/number3"
@@ -136,9 +137,9 @@
         android:layout_below="@+id/txtvertical"
         android:layout_marginLeft="@dimen/dimen_10"
         android:layout_toRightOf="@+id/number9"
-        android:background="@drawable/buttoncorner"
+        android:background="@drawable/check"
         android:layout_marginTop="@dimen/dimen_5"
-        android:text="check"
+        android:text=""
         android:textColor="@android:color/white"
         android:textSize="@dimen/dimen_10" />
 
@@ -148,7 +149,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/number9"
         android:layout_marginLeft="@dimen/dimen_5"
-        android:layout_marginRight="@dimen/dimen_5"
         android:layout_marginTop="@dimen/dimen_20"
         android:text="sdsdsd"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -174,11 +174,10 @@
         android:layout_width="@dimen/dimen_45"
         android:layout_height="@dimen/dimen_40"
         android:layout_below="@+id/number9"
-        android:layout_marginLeft="@dimen/dimen_5"
-        android:layout_toRightOf="@+id/number10"
-        android:background="@drawable/buttoncorner"
-        android:layout_marginTop="@dimen/dimen_10"
-        android:text="check"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/check"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text=""
         android:textColor="@android:color/white"
         android:textSize="@dimen/dimen_10" />
     

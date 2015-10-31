@@ -12,8 +12,8 @@
         android:layout_width="@dimen/dimen_80"
         android:layout_height="@dimen/dimen_40"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/buttoncorner"
-        android:text="Try it yourself" />
+        android:background="@drawable/tryit"
+        android:text="" />
     
       <Button
         android:id="@+id/button1"
@@ -22,8 +22,8 @@
         android:layout_weight="1"
         android:layout_marginRight="@dimen/dimen_10"
         android:layout_toLeftOf="@+id/button2"
-        android:background="@drawable/buttoncorner"
-        android:text="Previous Tutorial" />
+        android:background="@drawable/previous"
+        android:text="" />
 
     <Button
         android:id="@+id/button3"
@@ -32,7 +32,7 @@
         android:layout_weight="1"
         android:layout_marginLeft="@dimen/dimen_10"
          android:layout_toRightOf="@+id/button2"
-        android:background="@drawable/buttoncorner"
-        android:text="Next Tutorial" />
+        android:background="@drawable/next"
+        android:text="" />
 
 </RelativeLayout>
